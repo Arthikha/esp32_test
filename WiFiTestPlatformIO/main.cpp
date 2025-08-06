@@ -5,8 +5,8 @@
 #include <WebServer.h>
 
 // Replace with your network credentials
-const char* ssid = "AGalaxy";
-const char* password = "2403arsoo2";
+const char* ssid = "SSID";
+const char* password = "password";
 
 // Assign output variable to GPIO pin
 const int output = 8;
@@ -98,4 +98,5 @@ void setup() {
 void loop() {
   // Handle incoming client requests
   server.handleClient();
+
 }
