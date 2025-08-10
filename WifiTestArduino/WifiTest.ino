@@ -1,5 +1,3 @@
-#include <Arduino.h>
-
 #include <WiFi.h>
 #include <WebServer.h>
 
@@ -8,7 +6,7 @@ const char* ssid = "SSID";
 const char* password = "password";
 
 // Assign output variable to GPIO pin
-const int output = 8;
+const int output = 2;
 String outputState = "OFF";
 
 // Create a web server object
