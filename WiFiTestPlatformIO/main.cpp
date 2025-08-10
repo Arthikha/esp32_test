@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-// Serial monitor for PlatformIO not working
+// Serial monitor for PlatformIO works only when enabling USB CDC
 
 #include <WiFi.h>
 #include <WebServer.h>
@@ -67,7 +67,7 @@ void handleGPIOOff() {
 
 void setup() {
   Serial.begin(115200);
-
+  delay(1000);   // To view all output in serial monitor
   // Initialize the output variable as output
   pinMode(output, OUTPUT);
   // Set the onboard LED to LOW (inverted logic)
@@ -101,4 +101,5 @@ void loop() {
   server.handleClient();
 
 }
+
 
