@@ -1,5 +1,6 @@
 #include <Arduino.h>
 
+// Serial monitor for PlatformIO not working
 
 #include <WiFi.h>
 #include <WebServer.h>
@@ -100,3 +101,4 @@ void loop() {
   server.handleClient();
 
 }
+
