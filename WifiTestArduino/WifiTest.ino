@@ -1,3 +1,5 @@
+// Enable USB CDC On Boot for testing Esp32 C3 Dev module
+
 #include <WiFi.h>
 #include <WebServer.h>
 
